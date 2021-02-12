@@ -6,7 +6,7 @@
  - 영역(Scope) : 속성을 공유할 수 있는 유효범위, 생존기간
  - 4개의 영역 범위가 존재 page, request, session, application
  
-    ### scop범위
+    ### scope범위
    
    page < request < session < application
  
@@ -60,9 +60,64 @@
   - removeAttribute(String name) <br>
   - getAttributeNames() <br>
   
-  
-  
+### 예제 코드
+   ### Servlet
+  ```
+  @WebServlet("/scope") // 이 서블릿 페이지를 웹에서 접근할 수 있는 url
+public class ScopeSerlvet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
 
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // page는 JSP파일에서 작성 ( JSP only )
+
+        // request
+        request.setAttribute("num2", 20);
+
+        // session
+        request.getSession().setAttribute("num3", 30);
+
+        // application
+        request.getServletContext().setAttribute("num4", 40);
+
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/index.jsp");
+        rd.forward(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+}
+  ```
+   ### JSP
+  ```
+  <%
+    pageContext.setAttribute("num1", 10);
+%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+    ${ pageScope.num1 } <br>
+    ${ requestScope.num2 } <br>
+    ${ sessionScope.num3 } <br>
+    ${ applicationScope.num4 } <br>
+    <hr>
+    ${ num1 } <br>
+    ${ num2 } <br>
+    ${ num3 } <br>
+    ${ num4 } <br>
+</body>
+</html>
+```
+- 첫째 방법 : scope영역 명시 후 출력하고자 하는 속성 명 작성
+- 두번째 방법 : 속성 명 제대로 알고 있을 경우, 속성 명 만으로 지정
 
 ### 참조
 [영역 객체와 속성](https://blog.naver.com/javaking75/140181686711, "jsp link") <br>
