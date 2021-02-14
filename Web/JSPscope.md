@@ -30,7 +30,8 @@
    Object obj = request.getAttribute("이름");
    ```
    
-   ### session
+   ### session 
+   [세션이란?](https://github.com/100race/TIL/blob/main/Web/session.md)<br>
    범위 : 세션이 종료될 때 까지(로그아웃 할때까지)
    - 하나의 브라우저 당 1개의 session 객체
    - 웹 브라우저 탭 간에 세션정보 공유됨. 웹 브라우저 별로 변수가 관리되는 경우 사용
@@ -40,6 +41,7 @@
    ```
    request.getSession();
    ```
+   
    
    ### application
    범위 : 웹 어플리케이션 종료시 까지
