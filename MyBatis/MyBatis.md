@@ -1,5 +1,6 @@
 # MyBatis
 
+
 ## MyBatis란?
   자바의 데이터베이스 프로그래밍을 조금 더 쉽게 도와주는 프레임워크. JDBC를 조금 더 쉽게 다루기 위해 개발됨.
   
@@ -21,6 +22,9 @@
 |SqlSessionFactory|SqlSession을 생성한다|
 |SqlSession|핵심적인 역할을 하는 클래스. SQL 실행이나 트랜잭션 관리를 실행. thread-safe하지 않으므로 thread마다 필요시 생성|
 |mapping파일 (user.xml) |SQL문과 OR Mapping 설정 |
+
+  ### MyBatis 구조
+  ![mybatis구조](https://user-images.githubusercontent.com/46726709/107893887-f3121180-6f70-11eb-963e-3aac82ae1521.PNG)
  
  
  ### 참조
