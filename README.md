@@ -2,13 +2,13 @@
 Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하기 ~
 
 ## Web ( servlet & JSP )
-- [JSPscope](https://github.com/100race/TIL/blob/main/Web/JSPscope.md)
-- [session(세션)](https://github.com/100race/TIL/blob/main/Web/session.md)
-- [AJAX](https://github.com/100race/TIL/blob/main/Web/AJAX.md)
 - [JSP&Servlet](https://github.com/100race/TIL/blob/main/Web/JSP&Servlet.md)
+- [JSPscope](https://github.com/100race/TIL/blob/main/Web/JSPscope.md)
+- [Session](https://github.com/100race/TIL/blob/main/Web/session.md)
+- [AJAX](https://github.com/100race/TIL/blob/main/Web/AJAX.md)
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
 
-## Java ORM
+## SQLMapper
 - [MyBatis란?](https://github.com/100race/TIL/blob/main/MyBatis/MyBatis.md)
 
 ## Android
