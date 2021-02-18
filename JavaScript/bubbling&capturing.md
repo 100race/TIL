@@ -16,3 +16,6 @@
   - 타깃 단계 – 이벤트가 실제 타깃 요소에 전달되는 단계
   - 버블링 단계 – 이벤트가 상위 요소로 전파되는 단계
   
+
+### 참조
+[버블링과 캡처링](https://ko.javascript.info/bubbling-and-capturing)<br>
