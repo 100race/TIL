@@ -8,6 +8,11 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 - [AJAX](https://github.com/100race/TIL/blob/main/Web/AJAX.md)
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
 
+## JavaScript
+- [DOM](https://github.com/100race/TIL/blob/main/JavaScript/DOM.md)
+- [버블링&캡쳐링](https://github.com/100race/TIL/blob/main/JavaScript/bubbling%26capturing.md)
+
+
 ## SQLMapper
 - [MyBatis란?](https://github.com/100race/TIL/blob/main/MyBatis/MyBatis.md)
 
