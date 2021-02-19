@@ -10,7 +10,7 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 
 ## JavaScript
 - [DOM](https://github.com/100race/TIL/blob/main/JavaScript/DOM.md)
-- [버블링&캡쳐링](https://github.com/100race/TIL/blob/main/JavaScript/bubbling%26capturing.md)
+- [이벤트 버블링&캡쳐링](https://github.com/100race/TIL/blob/main/JavaScript/bubbling%26capturing.md)
 
 
 ## SQLMapper
