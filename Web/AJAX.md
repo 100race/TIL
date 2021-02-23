@@ -3,9 +3,14 @@
 ## AJAX(Asynchronous Javascript And XML)란?
 - 비동기식 자바스크립트와 xml. 자바스크립트의 라이브러리
 - 자바스크립트를 이용해서 비동기적으로 서버와 브라우저가 데이터를 교환할 수 있는 통신 방식을 의미한다.
-- 전체 페이지를 새로고침 하지 않고도 일부 부분만 변경되게 하는 기법<br><br>
+- 전체 페이지를 새로고침 하지 않고도 일부 부분만 변경되게 하는 기법
+- AJAX는 JSON(JavaScript Object Notion)을 사용하는 것이 일반적이다.<br><br>
 
-### 장점 : 자원 낭비를 줄일 수 있다<br>
+### 동기식 처리 모델 VS 비동기식 처리 모델
+- 동기식 : 직렬적. 서버에 데이터를 요청한 이후 데이터가 올때까지 대기하며 이후 작업 중단.(Blocking)
+- 비동기식 : 병렬적. 서버에 데이터를 요청한 이후 데이터를 기다리지 않고(Non-Blocking) 즉시 다음 작업 수행. 자바스크립트 대부분의 DOM 이벤트와 Timer함수 (setTimeout, setInterval), Ajax요청은 비동기적으로 동작.
+
+### 장점 : 자원 낭비를 줄일 수 있고 빠르다<br>
  사용자가 먼저 폼을 보낸 페이지와 반응으로 오는 페이지는 비슷한 경우가 많다. 페이지 전체를 새로고침하면 대역폭 낭비가 심하므로 일부분만 바꿔
  방비를 줄이는 기법.
 - 페이지 이동없이 화면 전환이 빠르고 부드럽다.
@@ -73,3 +78,4 @@ $.get('send-ajax-data.php').done(function(data) {
 ### 참조
 [AJAX](https://ko.wikipedia.org/wiki/Ajax, "Ajax link") <br>
 [AJAX란 무엇인가?](https://velog.io/@surim014/AJAX%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80, "Ajax link") <br>
+[jQuery Ajax & JSON | PoiemaWeb](https://poiemaweb.com/jquery-ajax-json)<br?
