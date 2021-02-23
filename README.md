@@ -5,10 +5,10 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 - [JSP&Servlet](https://github.com/100race/TIL/blob/main/Web/JSP&Servlet.md)
 - [JSPscope](https://github.com/100race/TIL/blob/main/Web/JSPscope.md)
 - [Session](https://github.com/100race/TIL/blob/main/Web/session.md)
-- [AJAX](https://github.com/100race/TIL/blob/main/Web/AJAX.md)
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
 
 ## JavaScript
+- [AJAX](https://github.com/100race/TIL/blob/main/Web/AJAX.md)
 - [DOM](https://github.com/100race/TIL/blob/main/JavaScript/DOM.md)
 - [BOM](https://github.com/100race/TIL/blob/main/JavaScript/BOM.md)
 - [이벤트 버블링&캡쳐링](https://github.com/100race/TIL/blob/main/JavaScript/bubbling%26capturing.md)
