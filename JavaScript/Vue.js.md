@@ -70,3 +70,4 @@
   ### 참고
   [Vue.js 시작하기 - vuejs.org](https://kr.vuejs.org/v2/guide/index.html)<br>
   [React 인가 Vue 인가?](https://joshua1988.github.io/web_dev/vue-or-react/)<br>
+  [싱글 파일 컴포넌트](https://kr.vuejs.org/v2/guide/single-file-components.html)<br>
