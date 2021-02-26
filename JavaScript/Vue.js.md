@@ -25,17 +25,29 @@
   }
 })
 ```
-
   ## Vue파일 구조
-  한 컴포넌트에서 HTML,Script,CSS를 관리하는데 이것을 싱글 파일 컴포넌트라고 한다.
+  페이지 내 Vue 선언 방식의 단점
+  - Global definitions - 모든 컴포넌트가 고유한 이름 필요
+  - String templates - 구문 강조가 약하다. HTML 에 보기 안좋은 슬래시
+  - No CSS support - CSS를 지원안하는게 아니라, CSS가 눈에 띄게 모듈화 되지 않음
+  - No build step - 전처리기가 아닌 HTML 및 ES5 JavaScript로 제한
+  이런 약점을 해결한 SFC
+  ### 싱글 파일 컴포넌트 (SFC)
+  싱글 파일 컴포넌트는 화면의 특정 영역에 대한 HTML,scipt,CSS 코드를 한 파일에서 관리하는 방법.
+  뷰 CLI 프로젝트를 생성하고 나면 App.vue라는 파일을 확인할 수 있다. 이처럼 vue 확장자를 가진
+  파일을 모두 싱글 파일 컴포넌트라 한다.
   ```
   <!--HTML을 작성하는 부분-->
   <template></template>
-  <!-- script을 정의하는 부분-->
+  <!-- 자바스크립트 (뷰 컴포넌트 내용) 부분-->
   <script></script>
-  <!--css를 정의하는 부분-->
+  <!--css를 정의하는 부분 (뷰 템플릿의 스타일)-->
   <style></style>
   ```
+  - 싱글 파일 컴포넌트는 뷰 로더에 의해 HTML,CSS,JS와 같은 웹 자원으로 분리되어 실행. 뷰 로더는 웹팩의 로더 종류 중 하나이고 뷰 CLI로 프로젝트를 생성하면 기본적으로 설정되어있다.
+  - template : 직접적으로 화면에 표시할 내용의 코드가 들어가는 부분. HTML Tag가 들어가며, vue의 데이터 바인딩이 추가됨
+  - script : vue components의 내용이 정의되는 내용. v-dom에 대한 life cycle 개념이 추가된다. 
+  - style : template에서 구성한 html에 대한 css 스타일을 정의하는 영역
   
   ## Vue.js VS React
   |Vue.js|React|
@@ -44,10 +56,8 @@
   |간단함|대규모 개발|
   |빠르고 경량|??|
   
+
   
-  
-  
-  spa
   
 
   
