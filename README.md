@@ -3,10 +3,12 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 
 ## Web ( servlet & JSP )
 - [JSP&Servlet](https://github.com/100race/TIL/blob/main/Web/JSP&Servlet.md)
+  - [MVC](https://github.com/100race/TIL/blob/main/Web/JSP%26Servlet.md#mvc-pattern)
 - [JSPscope](https://github.com/100race/TIL/blob/main/Web/JSPscope.md)
 - [Session](https://github.com/100race/TIL/blob/main/Web/session.md)
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
 - [SPA](https://github.com/100race/TIL/blob/main/Web/SPA.md)
+
 
 ## JavaScript
 - [AJAX](https://github.com/100race/TIL/blob/main/Web/AJAX.md)
