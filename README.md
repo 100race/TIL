@@ -9,6 +9,8 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
 - [SPA](https://github.com/100race/TIL/blob/main/Web/SPA.md)
 
+## Spring
+- [IoC](https://github.com/100race/TIL/blob/main/Spring/IoC.md)
 
 ## JavaScript
 - [AJAX](https://github.com/100race/TIL/blob/main/Web/AJAX.md)
