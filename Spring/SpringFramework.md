@@ -15,27 +15,31 @@
   - 스프링프레임워크는 많은 디자인패턴을 적용시켜 배포되므로 프레임워크를 사용하는 자체가 디자인패턴을 사용하는것.
   
  ### 특징
-1. 경량
-  일반적인 J2EE 등 다른 프레임워크와 달리 객체간의 관계를 구성할 때 별도의 API를 사용하지 않고 기존에 존재하는 라이브러리 등을 사용하기 때문에 객체가 가볍다
-  2. [제어 역행(IoC)](https://github.com/100race/TIL/edit/main/Spring/IoC.md)
-  IoC의 제어역행이란 객체의 생성에서부터 생명주기의 관리까지 모든 객체에 대한 제어권이 바뀐다는 것을 의미.
-  Servlet, EJB등을 사용하는 경우 Container에 제어권이 넘어가 제어를 전담한다.
-  3. 의존성 관리(DI: Dependency Injection)
+1. <b>경량</b> <br>
+   일반적인 J2EE 등 다른 프레임워크와 달리 객체간의 관계를 구성할 때 별도의 API를 사용하지 않고 기존에 존재하는 라이브러리 등을 사용하기 때문에 객체가 가볍다
+2. [제어 역행(IoC)](https://github.com/100race/TIL/edit/main/Spring/IoC.md) <br>
+   ![IoC](https://user-images.githubusercontent.com/46726709/110338862-dac27d80-806a-11eb-888a-4f8cb354c2b7.PNG) <br>
+   IoC의 제어역행이란 객체의 생성에서부터 생명주기의 관리까지 모든 객체에 대한 제어권이 바뀐다는 것을 의미.
+   Servlet, EJB등을 사용하는 경우 Container에 제어권이 넘어가 제어를 전담한다.
+3.  <b>의존성 관리(DI: Dependency Injection)</b> <br>
     - 의존성 : 하나의 객체가 다른 객체 없이 제대로된 역할을 할 수 없다는 의미
     - 각각의 계층이나 서비스 간에 의존성이 존재할 경우 프레임워크가 자동으로 관리한다
-  4. 관점 지향 프로그래밍(AOP : Aspect-Oriented Programming)
+4. <b>관점 지향 프로그래밍(AOP : Aspect-Oriented Programming)</b> <br>
+  ![AOP](https://user-images.githubusercontent.com/46726709/110338869-dbf3aa80-806a-11eb-917b-88b60e6d9386.PNG) <br>
     - 공통모듈의 반복적인 코드를 줄이고, 핵심 비즈니스 로직에만 집중할 수 있는 방법을 제공한다. 
     - 트랜잭션이나 로깅, 보안과 같이 여러 모듈에서 공통적으로 사용하는 기능의 경우 해당 기능을 분리하여 관리할 수 있다.
-  5. 컨테이너
+5. <b>컨테이너</b> <br>
     - 특정 객체의 생성과 관리를 담당하며 객체 운용에 필요한 기능을 제공
     - 일반적으로 서버 안에 포함되어 배포 및 구동된다.
     - 대표적인 컨테이너로는 Servlet 객체를 생성하고 관리하는 Servlet컨테이너와 EJB객체를 관리하는 EJB 컨테이너가 있다.
     - Servlet 컨테이너는 톰캣버서버에도 포함되어 있다.
     - 애플리케이션 운용에 필요한 객체를 생성하고 객체간의 의존관계를 관리한다는 점에서 스프링도 일종의 컨테이너
   
+
   
   
   
 ### 참조
 [스프링부트로 배우는 자바 웹개발 (윤석진 저)]()<br>
 [프레임워크란](https://m.blog.naver.com/manddonara/119738492)<br>
+[IOC/AOP/container](https://backback.tistory.com/71)<br>
