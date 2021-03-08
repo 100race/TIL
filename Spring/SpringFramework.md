@@ -17,7 +17,7 @@
  ### 특징
 1. <b>경량</b> <br>
    일반적인 J2EE 등 다른 프레임워크와 달리 객체간의 관계를 구성할 때 별도의 API를 사용하지 않고 기존에 존재하는 라이브러리 등을 사용하기 때문에 객체가 가볍다
-2. [제어 역행(IoC)](https://github.com/100race/TIL/main/Spring/IoC.md) <br>
+2. [제어 역행(IoC)](https://github.com/100race/TIL/blob/main/Spring/IoC.md) <br>
    ![IoC](https://user-images.githubusercontent.com/46726709/110338862-dac27d80-806a-11eb-888a-4f8cb354c2b7.PNG) <br>
    IoC의 제어역행이란 객체의 생성에서부터 생명주기의 관리까지 모든 객체에 대한 제어권이 바뀐다는 것을 의미.
    Servlet, EJB등을 사용하는 경우 Container에 제어권이 넘어가 제어를 전담한다.
