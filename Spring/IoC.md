@@ -1,4 +1,5 @@
 # IoC(Inversion Of Control) 제어역행
+![IoC](https://user-images.githubusercontent.com/46726709/110338862-dac27d80-806a-11eb-888a-4f8cb354c2b7.PNG) <br>
  ## IoC란?
   - IoC객체의 생성, 생명주기의 관리까지 모든 객체에 대한 제어권이 바뀐 것을 의미.<br>
     기존에 자바 애플리케이션을 개발할 때 자바 객체를 생성하고 서로간 의존
