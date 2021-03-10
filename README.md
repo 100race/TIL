@@ -12,6 +12,7 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 ## Spring
 - [SpringFramework](https://github.com/100race/TIL/blob/main/Spring/SpringFramework.md)
   - [Framework](https://github.com/100race/TIL/blob/main/Spring/SpringFramework.md)
+- [SpringMVC구조](https://github.com/100race/TIL/blob/main/Spring/SpringMVC%EA%B5%AC%EC%A1%B0.md)
 - [IoC](https://github.com/100race/TIL/blob/main/Spring/IoC.md)
 
 ## JavaScript
