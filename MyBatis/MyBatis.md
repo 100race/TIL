@@ -52,7 +52,29 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    1-2. insert, update, delete 
     - insert의 selectKey는 기본 키 필드의 자동생성을 지원
     - <selectKey>를 사용하면 생성된 키를 쉽게 가져올 수 있다.
-
+```
+  <insert id="insertAuthor" parameterType="domain.blog.Author">
+        <selectKey keyProperty="id" resultType="int" >
+                select board_seq.nextval as idfrom dual
+        </selectKey>
+        insert into Author (id,username,password,email,bio)
+        values (#{id},#{username},#{password},#{email},#{bio})
+</insert>
+ 
+<update id="updateAuthor" parameterType="domain.blog.Author">
+        update Author set
+        username = #{username},
+        password = #{password},
+        email = #{email},
+        bio = #{bio}
+        where id = #{id}
+</update>
+ 
+<delete id="deleteAuthor” parameterType="int">
+        delete from Author where id = #{id}
+</delete>
+```
+                                             
 (2)configuration 파일(SqlMapConfig.xml)
 DB설정(별도의 properties파일로 분리가능)
 mapper설정(SQL 쿼리를 xml로 분리한 것)
