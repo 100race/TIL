@@ -102,22 +102,100 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         </selectKey>
         insert into Author (id,username,password,email,bio)
         values (#{id},#{username},#{password},#{email},#{bio})
-</insert>
+	</insert>
  
-<update id="updateAuthor" parameterType="domain.blog.Author">
+  <update id="updateAuthor" parameterType="domain.blog.Author">
         update Author set
         username = #{username},
         password = #{password},
         email = #{email},
         bio = #{bio}
         where id = #{id}
-</update>
+  </update>
  
-<delete id="deleteAuthor” parameterType="int">
+  <delete id="deleteAuthor” parameterType="int">
         delete from Author where id = #{id}
-</delete>
+  </delete>
 ```
-
+   1-3. resultMap 속성
+- 결과를 매핑할 때 하나의 java객체로 매핑이 안되는 경우에 사용(join)등
+- 테이블 컬럼명과 매핑할 자바 객체의 필드명이 다를 때도 사용
+<resultMap>의 매핑규칙을 지정한다.
+```
+ <resultMap id="selectResult" type="board">
+     <result property="num" column = 'seq'>
+     <result property="title" column = 'subject'>
+     <result property="content" column = 'content'>
+     <result property="redate" column = 'redate'>
+</resultMap>
+<select id=”selectBoard” parameterType=”int” resultMap=”selectResult”>
+    SELECT * FROM board WHERE num = #{num}
+</select>
+```
+   1-4. CDATA 
+- SQL 구문에 '<'를 사용하면 에러가 난다. (xml파서가 <를 태그 시작으로 처리)
+- CDATA 구역을 만들어 단순 문자 데이터로 인식하게 하여 에러를 피한다.
+```
+<select id=”selectBoard” parameterType=”int” resultType=”board”>
+    SELECT *
+    FROM board
+   <![CDATA[
+    WHERE num <= #{num}
+    ]]>
+</select>
+```
+  1-5. 동적 SQL
+  - if,choose,when,otherwise, where, set, foreach 등 사용
+  - choose, when, otherwise는 else문처럼 사용
+  - <set>,<where> 태그는 단순히 set,where만 추가. 조건문을 사용하면 일부 문법적 오류가 날 수 있는부분(AND나 OR, 콤마 등)을 처리해줌
+  ```
+<select id=”findActiveBlogLike”
+        parameterType=”Blog” resultType=”Blog”>
+        SELECT * FROM BLOG
+        <where>
+        <if test=”state != null”>
+                state = #{state}
+        </if>
+        <if test=”title != null”>
+                AND title like #{title}
+        </if>
+        <if test=”author != null and author.name != null”>
+                AND author_name like #{author.name}
+        </if>
+        </where>
+</select>
+```
+   - foreach 는 컬렉션에 대해 반복처리한다. 
+```
+  <select id="selectPostIn" resultType="domain.blog.Post">
+        SELECT *
+        FROM POST 
+        WHERE ID in 
+        <foreach item="item" index="index" collection="list"
+        open="(" separator="," close=")">
+                #{item}
+        </foreach>
+</select>
+```
+  |구분|설명|
+|---------|--------|
+|collection|전달받은 인자값|
+|item|전달받은 인자값을 다른이름으로 대체
+|open|해당 구문이 시작할 때|
+|close|해당 구문이 끝날 때|
+|index|항목의 인덱스 값을 꺼낼 때 사용할 변수 이름을 지정|
+|seperator|구분자. 한번 이상 반복되면 사이에 해당 구분자를 넣어줌|
+```
+<select id="selectPostIn" resultType="domain.blog.Post">
+        SELECT *
+        FROM POST 
+        WHERE ID in 
+        <foreach item="item" index="index" collection="list"
+        open="(" separator="," close=")">
+                #{item}
+        </foreach>
+</select>
+```
 
 
 
