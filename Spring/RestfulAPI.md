@@ -19,7 +19,12 @@
   - 일반 문자열, JSON, XML등 다양한 포맷의 데이터를 전송한다.
   - RestController에서 사용 가능한 요청 annotation
   - @RequestMapping, @GetMapping, @PostMapping, @PutMapping, @DeleteMapping
+  
+## 클라이언트 -> 서버 요청규칙
 
+## 서버 -> 클라이언트 응답코드
+
+## 서버 -> 클라이언트 응답데이터
 
 
 ### 참조
