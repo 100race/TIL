@@ -8,6 +8,7 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 - [Session](https://github.com/100race/TIL/blob/main/Web/session.md)
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
 - [SPA](https://github.com/100race/TIL/blob/main/Web/SPA.md)
+- [EL과JSTL](https://github.com/100race/TIL/blob/main/Web/EL%EA%B3%BCJSTL.md)
 
 ## Spring
 - [SpringFramework](https://github.com/100race/TIL/blob/main/Spring/SpringFramework.md)
