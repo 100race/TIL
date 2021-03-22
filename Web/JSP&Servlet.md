@@ -48,9 +48,9 @@ HTML문서에 내부적으로 자바 문법을 삽입하는 웹페이지 스크�
 
 
 ### 참조
-[JSP와 Servlet(서블릿)](https://m.blog.naver.com/acornedu/221128616501, "jsp link") <br>
-[JSP와 Servlet 왜 같이 사용하는가?](https://anster.tistory.com/128, "jsp link") <br>
-[웹 개발을 위한 프레임워크](https://www.holaxprogramming.com/2012/12/18/java-hello-j2ee/, "jsp link") <br>
-[프레임워크란?](https://www.castingn.com/sourcing/kkultip_detail/110, "jsp link") <br>
+[JSP와 Servlet(서블릿)](https://m.blog.naver.com/acornedu/221128616501) <br>
+[JSP와 Servlet 왜 같이 사용하는가?](https://anster.tistory.com/128) <br>
+[웹 개발을 위한 프레임워크](https://www.holaxprogramming.com/2012/12/18/java-hello-j2ee/) <br>
+[프레임워크란?](https://www.castingn.com/sourcing/kkultip_detail/110) <br>
 
 
