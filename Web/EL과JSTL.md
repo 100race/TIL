@@ -57,7 +57,7 @@
   태그<>를 통해 JSP코드를 관리하는 라이브러리로 JSP의 가독성을 높이고 DB를 편하게 처리. 라이브러리이기 때문에 사용하기 위해서는 추가해야한다. 추가 시 
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> 이런식으로 선언하는데 uri와 prefix를 사용할 태그에 맞게 추가해준다.
   
-  2-1.태그의 종류
+  2-1.태그의 종류 <br>
   태그의 종류에는 core, format, function, xml, sql
 
 - Core (prefix:c) : 흐름제어, 일반프로그래밍의 변수선언과유사, 페이지 이동기술 제공 <br>
@@ -66,17 +66,17 @@
 - Formatting (prefix:fmt) : 숫자, 날짜, 시간을 포맷팅. <br>
     uri = http://java.sun.com/jsp/jstl/fmt
 
-  - Database (prefix:sql) : DB데이터를 crud 할 수 있는 기능을 제공<br>
+- Database (prefix:sql) : DB데이터를 crud 할 수 있는 기능을 제공<br>
    uri = http://java.sun.com/jsp/jstl/sql
 
-  - XML (prefix:x) : XML문서를 처리할 때 필요한 기능 제공 <br>
+- XML (prefix:x) : XML문서를 처리할 때 필요한 기능 제공 <br>
    uri = http://java.sun.com/jsp/jstl/xml
 
-  - Function (prefix:fn) : 문자열을 제공하는 함수 제공 <br>
+- Function (prefix:fn) : 문자열을 제공하는 함수 제공 <br>
    uri = http://java.sun.com/jsp/jstl/functions
 
 
-  2-3. JSTL 태그의 속성
+  2-2. JSTL 태그의 속성
   1. set : 변수 생성
   ```
   <c:set var="변수명" value="값" [scope="변수저장영역"]/>
@@ -87,8 +87,8 @@
   <c:if test="${col=='total' }">selected</c:if>
   ```
   3. choose : else if문을 나타냄. choose - when(if) - otherwise(else). test는 조건을 나타냄.
- ```
- <c:choose>
+  ```
+   <c:choose>
   <c:when test="${empty list}">
    <tr><td colspan="6">등록된 글이 없습니다.</td>
   </c:when>
@@ -96,23 +96,21 @@
     <td>${dto.bbsno}</td>
   </c:otherwise>
 
- ```
+   ```
   4. foreach
   ```
   <c:forEach var="변수" begin="1" end="${dto.indent }" items="${아이템} step="증가값" varStatus="변수명지정">&nbsp;&nbsp;</c:forEach>
   ```
-  5. ipmort
-  6. 날짜 format
-  7. split
+  5. split
   ```
   <c:set var="phone" value="${ fn:split(userVO.phone , '-') }" />
   ```
 
-  ## 3. EL JSTL 적용 전 후
+## 3. EL JSTL 적용 전 후
   - EL JSTL은 가독성을 높여주고 퍼블리셔와 협업시 java코드를 줄여 보기 편하게 만들 수 있다.
   - 적용 전 게시판 list.jsp
-  ```
-  <%@ page contentType="text/html; charset=UTF-8" %>
+```
+<%@ page contentType="text/html; charset=UTF-8" %>
 <%@ include file="/ssi/ssi_bbs.jsp" %>
 <%
 List<BbsDTO> list = (List<BbsDTO>)request.getAttribute("list");
