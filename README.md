@@ -7,7 +7,9 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 - [JSPscope객체](https://github.com/100race/TIL/blob/main/Web/JSPscope%EA%B0%9D%EC%B2%B4.md)
 - [Session](https://github.com/100race/TIL/blob/main/Web/session.md)
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
-- [SPA](https://github.com/100race/TIL/blob/main/Web/SPA.md)
+- [SPA(싱글페이지 어플리케이션)](https://github.com/100race/TIL/blob/main/Web/SPA.md)
+  - [SSR (서버사이드 렌더링)](https://github.com/100race/TIL/blob/main/Web/SPA.md#ssr%EC%84%9C%EB%B2%84%EC%82%AC%EC%9D%B4%EB%93%9C%EB%A0%8C%EB%8D%94%EB%A7%81)
+  - [SEO (검색엔진 최적화)](https://github.com/100race/TIL/blob/main/Web/SPA.md#%EB%8B%A8%EC%A0%90)
 - [EL과JSTL](https://github.com/100race/TIL/blob/main/Web/EL%EA%B3%BCJSTL.md)
 
 ## Spring
