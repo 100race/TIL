@@ -11,21 +11,43 @@
  출처 : [what-is-a-single-page-application]https://www.excellentwebworld.com/what-is-a-single-page-application/<br>
  
  ### 장점
- - 트래픽 감소, 속도, 사용성, 반응성의 향상
+ - 트래픽 감소
+ - 필요한 리소스만 부분적으로 로딩(속도,성능)
+ - 사용성(UX)
+ - 서버의 탬플릿 연산을 클라이언트로 분산(성능)
+ - 컴포넌트 별 개발 용이(생산성)
  
  ### 단점
  - 초기 구동 속도<br>
  SPA는 모든 정적 리소스를 최초에 한번 다운로드 하기 떄문에 초기구동 속도가 상대적으로 느리다. 
  - 검색엔진 최적화(SEO) 문제
- SPA는 서버 렌더링 방식이 아닌 자바스크립트 기반 비동기 모델(클라이언트 렌더링)이다. Angular나 React 등의 SPA 프레임워크는 서버렌더링을
- 지원하는 SEO 대응 기술이 이미 존재.
- 
+ SPA는 서버 렌더링 방식이 아닌 자바스크립트 기반 비동기 모델(클라이언트 렌더링)이다. Angular나 React 등의 SPA 프레임워크는 서버렌더링(SSR)을
+ 지원하는 SEO 대응 기술이 이미 존재. SSR로 검색엔진최적화를 한다.
+ > SEO(검색엔진최적화)란?
+ > - 구글,네이버 등 검색엔진이 이해하기 쉽도록 홈페이지의 구조와 페이지를 개발해 검색 결과 상위에 노출될 수 있도록 하는 작업.
+ > - 기본적인 작업방식은 특정 검색어를 웹페이지에 적절하게 배치하고 다른 웹페이지에서 링크가 많이 연결되도록 함.
 
-#### SEO(검색엔진최적화)
- [SPA와 SSR의 장단점](https://medium.com/aha-official/%EC%95%84%ED%95%98-%ED%94%84%EB%A1%A0%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EA%B8%B0-1-spa%EC%99%80-ssr%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EA%B7%B8%EB%A6%AC%EA%B3%A0-nuxt-js-cafdc3ac2053)<br?
+
+
+## SSR(서버사이드렌더링)
+- 웹의 시작은 MPA(multiple page applicaion). 페이지를 이동할 때마다 새로운 페이지를 서버연산을 통해서 응답. 서버사이드 렌더링(SSR)과정
+ #### 장점
+ - 검색 엔진 최적화(SEO) : <br>
+ 브라우저에서 JavaScript 코드가 동작하기 전에 완성된 탬플릿을 서버로부터 전달받는다. JavaScript를 모르는 검색로봇이 페이지를 크롤링 하기 적합함.
+ #### 단점
+ - 페이지 이동시 화면 깜빡임 (UX)
+ - 페이지 이동시 불필요한 템플릿도 중복해서 로딩(성능)
+ - 서버 렌더링에 따른 부하(성능)
+ - 모바일 앱 개발시 추가적 백엔드 작업 필요(생산성)
+
+
+
+ 
  
  
  ### 참고
  [SPA란?](https://velog.io/@josworks27/SPA-%EA%B0%9C%EB%85%90)<br>
+ [SPA와 SSR의 장단점](https://medium.com/aha-official/%EC%95%84%ED%95%98-%ED%94%84%EB%A1%A0%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EA%B8%B0-1-spa%EC%99%80-ssr%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EA%B7%B8%EB%A6%AC%EA%B3%A0-nuxt-js-cafdc3ac2053)<br>
+ [검색엔진 최적화(SEO)로 구글상위에 랭크되는 10가지 방법](https://library.gabia.com/contents/domain/4359/)
  
  
