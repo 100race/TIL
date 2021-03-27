@@ -3,20 +3,20 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 
 ## Web ( servlet & JSP )
 - [JSP&Servlet](https://github.com/100race/TIL/blob/main/Web/JSP&Servlet.md)
-  - [MVC](https://github.com/100race/TIL/blob/main/Web/JSP%26Servlet.md#mvc-pattern)
+  - [MVC패턴](https://github.com/100race/TIL/blob/main/Web/JSP%26Servlet.md#mvc-pattern)
 - [JSPscope객체](https://github.com/100race/TIL/blob/main/Web/JSPscope%EA%B0%9D%EC%B2%B4.md)
 - [Session](https://github.com/100race/TIL/blob/main/Web/session.md)
 - [URI와URL](https://github.com/100race/TIL/blob/main/Web/url%EA%B3%BCuri.md)
 - [SPA(싱글페이지 어플리케이션)](https://github.com/100race/TIL/blob/main/Web/SPA.md)
   - [SSR (서버사이드 렌더링)](https://github.com/100race/TIL/blob/main/Web/SPA.md#ssr%EC%84%9C%EB%B2%84%EC%82%AC%EC%9D%B4%EB%93%9C%EB%A0%8C%EB%8D%94%EB%A7%81)
   - [SEO (검색엔진 최적화)](https://github.com/100race/TIL/blob/main/Web/SPA.md#%EB%8B%A8%EC%A0%90)
-- [EL과JSTL](https://github.com/100race/TIL/blob/main/Web/EL%EA%B3%BCJSTL.md)
+- [EL과JSTL 표현식](https://github.com/100race/TIL/blob/main/Web/EL%EA%B3%BCJSTL.md)
 
 ## Spring
 - [SpringFramework](https://github.com/100race/TIL/blob/main/Spring/SpringFramework.md)
   - [Framework](https://github.com/100race/TIL/blob/main/Spring/SpringFramework.md)
 - [SpringMVC구조](https://github.com/100race/TIL/blob/main/Spring/SpringMVC%EA%B5%AC%EC%A1%B0.md)
-- [https://github.com/100race/TIL/blob/main/Spring/AOP.md
+- [AOP(관점지향프로그래밍)](https://github.com/100race/TIL/blob/main/Spring/AOP.md)
 - [IoC](https://github.com/100race/TIL/blob/main/Spring/IoC.md)
 - [RestfulAPI](https://github.com/100race/TIL/blob/main/Spring/RestfulAPI.md)
   - [HTTP응답코드](https://github.com/100race/TIL/blob/main/Spring/RestfulAPI.md#http-%EC%83%81%ED%83%9C%EC%BD%94%EB%93%9C)
