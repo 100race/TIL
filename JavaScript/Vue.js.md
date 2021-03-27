@@ -2,9 +2,15 @@
   ## Vue.js란?
   웹 화면을 만들기 위한 프론트엔드 프레임워크. Angular,React 등이 있다. Vue layer에 집중된 경량 UI라이브러리. 
   
-  ### 
-  
+  ### Vue.js의 특징
+  1. 가상돔(Virtual DOM)으로 화면 요소를 변경 및 조작하고 최종결과물을 DOM tree에 반영
+  2. 컴포넌트 기반 개발 방식 : 화면을 여러개 작은 단위로 쪼개어 개발. 재사용성, 구현속도, 코드 가독성 증가
+  3. MVVM 패턴 : 화면 UI  코드와 백엔드 데이터 처리 코드를 분리
+  ![mvvm](https://user-images.githubusercontent.com/46726709/112732481-8af61880-8f7d-11eb-9cbd-458ce8587845.PNG)
+  4. 기존 프레임워크의 장점 흡수 : 리액트, 앵귤러의 장점인 two-way 데이터바인딩과 Virtual DOM 기능 채용
+  5. 
   ### 선언적 렌더링
+  vue.js의 핵심은 간단한 템플릿을 사용해 선언적으로 DOM에 데이터를 렌더링 하는 것.
   app.vue 파일, 
   - 화면 구조
   main.js 파일 구조
