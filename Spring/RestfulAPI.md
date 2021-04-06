@@ -33,13 +33,13 @@
  |게시판 예시| 기존 서비스에서의 요청 | Restful서비스에서의 요청|
   |-------|--------|-----------|
   |글읽기|[GET]URL/read?no=123|[GET]URL/123|
-  |글쓰기|[POST|URL/write|[POST]URL|
+  |글쓰기|[POST]URL/write|[POST]URL|
   |글삭제|[GET]URL/delete?no=123|[DELETE]URL/123|
   |글수정|[POST]/update|[PUT]URL/123|
   
   |HTTP Method 타입| CRUD |
   |-------|--------|
-  |POST|[create(insert)|
+  |POST|create(insert)|
   |GET|read(select)|
   |DELETE|delete|
   |PUT|update|
@@ -109,6 +109,6 @@ JSON은 XML보다 나중에 나온 경량의 데이터 교환 방식. 자바스�
 ```
 
 ### 참조
-[스프링 Restful 서비스(API) 개념](htps://codevang.tistory.com/260?category=849481)<br>
 [스프링부트로 배우는 자바 웹개발 - 윤석진 지음]<br>
 [서버의 상태를 알려주는 HTTP 상태코드](https://evan-moon.github.io/2020/03/15/about-http-status-code/)<br>
+[스프링 Restful 서비스(API) 개념](htps://codevang.tistory.com/260?category=849481)<br>
