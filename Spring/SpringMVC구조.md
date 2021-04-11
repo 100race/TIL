@@ -57,8 +57,6 @@
 
 
 
-출처: https://jeong-pro.tistory.com/96 [기본기를 쌓는 정아마추어 코딩블로그]
-
 ### 참조 
 [spring구조 이해및처리](https://iri-kang.tistory.com/4)<br>
 [spring mvc 처리과정](https://jeong-pro.tistory.com/96)<br>
