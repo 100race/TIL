@@ -37,7 +37,7 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 
 ## Python
 - [리스트함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%A6%AC%EC%8A%A4%ED%8A%B8%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
-- [문자열함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%A6%AC%EC%8A%A4%ED%8A%B8%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
+- [문자열함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%AC%B8%EC%9E%90%EC%97%B4%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
 - [딕셔너리함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
 
 ## SQLMapper
