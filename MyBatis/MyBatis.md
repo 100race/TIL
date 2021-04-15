@@ -27,7 +27,7 @@
 2. DB연동을 위한 설정: DataBase에 어떻게 접속할 것인지에 대한 설정 <environment>. 별도의 properties 파일로 분리 가능
 3. Mapper 설정파일 등록: 매핑 설정이 어디있는지 <mapper>
 - ex. SpringMVC 프로젝트는 root-context.xml에서 설정하기도함
-```
+```xml
   	<!-- 커넥션 풀 DataSource 객체 데이터베이스 접속 설정 -->
 	<bean id="dataSource" destroy-method="close"
 		class="org.apache.commons.dbcp.BasicDataSource"
@@ -55,7 +55,6 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="spring.model" />
 	</bean>
- 
 ```
 
 ### 2. Mapper 파일 (user.xml, person.xml)
@@ -72,7 +71,7 @@
   
 3. mapper파일 선언
 
-```
+```xml
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
@@ -81,19 +80,18 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   ```
   - Mapper구조는 DTD선언 밑에 <mapper>루트 엘리먼트가 선언.
   - mapper 엘리먼트는 namespace속성을 가진다
-4. 활용
+4. 활용 <br>
    4-1. select <br>
    select 구문은 resultType이 필수다.
-   ```
+```xml
    <select id=”selectPerson” parameterType=”int” resultType=”hashmap”>
       SELECT * FROM PERSON WHERE ID = #{id}
     </select>
-   ```
-    
-   4-2. insert, update, delete <br> 
-    - insert의 selectKey는 기본 키 필드의 자동생성을 지원
-    - <selectKey>를 사용하면 생성된 키를 쉽게 가져올 수 있다.
 ```
+   4-2. insert, update, delete <br> 
+  - insert의 selectKey는 기본 키 필드의 자동생성을 지원
+  - <selectKey>를 사용하면 생성된 키를 쉽게 가져올 수 있다.
+```xml
   <insert id="insertAuthor" parameterType="domain.blog.Author">
         <selectKey keyProperty="id" resultType="int" >
                 select board_seq.nextval as idfrom dual
@@ -115,11 +113,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         delete from Author where id = #{id}
   </delete>
 ```
-   4-3. resultMap 속성 <br>
+  4-3. resultMap 속성 <br>
 - 결과를 매핑할 때 하나의 java객체로 매핑이 안되는 경우에 사용(join)등
 - 테이블 컬럼명과 매핑할 자바 객체의 필드명이 다를 때도 사용
 <resultMap>의 매핑규칙을 지정한다.
-```
+```xml
  <resultMap id="selectResult" type="board">
      <result property="num" column = 'seq'>
      <result property="title" column = 'subject'>
@@ -133,7 +131,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    4-4. CDATA <br>
 - SQL 구문에 '<'를 사용하면 에러가 난다. (xml파서가 <를 태그 시작으로 처리)
 - CDATA 구역을 만들어 단순 문자 데이터로 인식하게 하여 에러를 피한다.
-```
+```xml
 <select id=”selectBoard” parameterType=”int” resultType=”board”>
     SELECT *
     FROM board
@@ -146,7 +144,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   - if,choose,when,otherwise, where, set, foreach 등 사용
   - choose, when, otherwise는 else문처럼 사용
   - <set>,<where> 태그는 단순히 set,where만 추가. 조건문을 사용하면 일부 문법적 오류가 날 수 있는부분(AND나 OR, 콤마 등)을 처리해줌
-  ```
+ ```xml
 <select id=”findActiveBlogLike”
         parameterType=”Blog” resultType=”Blog”>
         SELECT * FROM BLOG
@@ -164,7 +162,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 </select>
 ```
    - foreach 는 컬렉션에 대해 반복처리한다. 
-```
+```xml
   <select id="selectPostIn" resultType="domain.blog.Post">
         SELECT *
         FROM POST 
@@ -183,7 +181,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 |close|해당 구문이 끝날 때|
 |index|항목의 인덱스 값을 꺼낼 때 사용할 변수 이름을 지정|
 |seperator|구분자. 한번 이상 반복되면 사이에 해당 구분자를 넣어줌|
-```
+```xml
 <select id="selectPostIn" resultType="domain.blog.Post">
         SELECT *
         FROM POST 
