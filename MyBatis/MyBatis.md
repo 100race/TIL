@@ -22,8 +22,7 @@
 |SqlSessionFactory|SqlSession을 생성한다|
 |SqlSession|핵심적인 역할을 하는 클래스. SQL 실행이나 트랜잭션 관리를 실행. thread-safe하지 않으므로 thread마다 필요시 생성|
 
-
-(1)MyBatis 환경설정파일 (SqlSessionConfig.xml)
+### 1. MyBatis 환경설정파일 (SqlSessionConfig.xml)
 1. TypeAlias 설정 : 사용할 모델 클래스에 대한 별칭 설정 <typeAlias>
 2. DB연동을 위한 설정: DataBase에 어떻게 접속할 것인지에 대한 설정 <environment>. 별도의 properties 파일로 분리 가능
 3. Mapper 설정파일 등록: 매핑 설정이 어디있는지 <mapper>
@@ -59,7 +58,7 @@
  
 ```
 
-(2)Mapper 파일 (user.xml, person.xml)
+### 2. Mapper 파일 (user.xml, person.xml)
 1. 두가지 종류.
   - SQL을 XML에 정의된 XML로 생성
   - SQL을 메소드에 어노테이션으로 정의한 인터페이스로 생성
@@ -78,13 +77,12 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="bbs"> 
-                 :
 </mapper>
   ```
   - Mapper구조는 DTD선언 밑에 <mapper>루트 엘리먼트가 선언.
   - mapper 엘리먼트는 namespace속성을 가진다
-
-   1-1. select
+4. 활용
+   4-1. select <br>
    select 구문은 resultType이 필수다.
    ```
    <select id=”selectPerson” parameterType=”int” resultType=”hashmap”>
@@ -92,7 +90,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
    ```
     
-   1-2. insert, update, delete 
+   4-2. insert, update, delete <br> 
     - insert의 selectKey는 기본 키 필드의 자동생성을 지원
     - <selectKey>를 사용하면 생성된 키를 쉽게 가져올 수 있다.
 ```
@@ -117,7 +115,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         delete from Author where id = #{id}
   </delete>
 ```
-   1-3. resultMap 속성
+   4-3. resultMap 속성 <br>
 - 결과를 매핑할 때 하나의 java객체로 매핑이 안되는 경우에 사용(join)등
 - 테이블 컬럼명과 매핑할 자바 객체의 필드명이 다를 때도 사용
 <resultMap>의 매핑규칙을 지정한다.
@@ -132,7 +130,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     SELECT * FROM board WHERE num = #{num}
 </select>
 ```
-   1-4. CDATA 
+   4-4. CDATA <br>
 - SQL 구문에 '<'를 사용하면 에러가 난다. (xml파서가 <를 태그 시작으로 처리)
 - CDATA 구역을 만들어 단순 문자 데이터로 인식하게 하여 에러를 피한다.
 ```
@@ -144,7 +142,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     ]]>
 </select>
 ```
-  1-5. 동적 SQL
+  4-5. 동적 SQL <br>
   - if,choose,when,otherwise, where, set, foreach 등 사용
   - choose, when, otherwise는 else문처럼 사용
   - <set>,<where> 태그는 단순히 set,where만 추가. 조건문을 사용하면 일부 문법적 오류가 날 수 있는부분(AND나 OR, 콤마 등)을 처리해줌
