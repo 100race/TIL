@@ -35,7 +35,8 @@
  - DL 사용시 컨테이너 종속이 증가하여 주로 DI를 이용함
  - DI의 종류 
  1. Constructor Injection
- 2. Setter Injection
+  매개변수 생성자를 호출하여 의존관계를 설정
+ 3. Setter Injection
  
 
 
@@ -48,3 +49,4 @@
 
 ### 참조
 [IoC컨테이너와 DI](https://dog-developers.tistory.com/12)<br>
+http://www.lectureblue.pe.kr/reqtiles/read.jsp?bbsno=985&nowPage=2&col=&word=&code=56
