@@ -34,6 +34,8 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 ## Node.js
 - [Node.js](https://github.com/100race/TIL/blob/main/Node.js/Node.js.md)
   
+## Algorithm
+- [bigO(빅오)](https://github.com/100race/TIL/blob/main/Algorithm/big-O.md)
 
 ## Python
 - [리스트함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%A6%AC%EC%8A%A4%ED%8A%B8%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
