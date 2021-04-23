@@ -1,5 +1,6 @@
-# TIL
-Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하기 ~
+# TIL :sparkles:
+Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하기 ~<br>
+:ocean: 아는 것도 다시 보자 :ocean:
 
 ## Web ( servlet & JSP )
 - [JSP&Servlet](https://github.com/100race/TIL/blob/main/Web/JSP&Servlet.md)
