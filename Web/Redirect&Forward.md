@@ -21,3 +21,4 @@ JSP환경에서 현재 페이지에서 다른페이지로 이동하는 페이지
 
 ### 참조
 [Redirect VS Forward](https://doublesprogramming.tistory.com/63)<br>
+[Forward와 Redirect 차이](https://mangkyu.tistory.com/51)<br>
