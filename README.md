@@ -1,5 +1,6 @@
 # TIL :sparkles:
-Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하기 ~<br>
+Today I Learned <br>
+~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하기 ~<br>
 :ocean: 아는 것도 다시 보자 :ocean:
 
 ## Web ( servlet & JSP )
@@ -43,6 +44,17 @@ Today I Learned ~ 오늘 학습한 내용, 새롭게 알게된 내용 정리하�
 - [리스트함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%A6%AC%EC%8A%A4%ED%8A%B8%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
 - [문자열함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%AC%B8%EC%9E%90%EC%97%B4%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
 - [딕셔너리함수정리](https://github.com/100race/TIL/blob/main/Python/%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC%ED%95%A8%EC%88%98%EC%A0%95%EB%A6%AC.md)
+- [예외처리](https://github.com/100race/TIL/blob/main/Python/%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC.ipynb)
+
+## 데이터분석
+- 데이터 분석, 머신러닝 위해 데이터 처리 python 활용
+  - [pandas_기초개념](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EA%B8%B0%EC%B4%88%EA%B0%9C%EB%85%90.ipynb)
+  - [pandas_Dataframe,series](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84%EA%B3%BC%EC%8B%9C%EB%A6%AC%EC%A6%88.ipynb)
+  - [pandas_Dataframe,series 그래프시각화](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_Dataframe_series_%EA%B7%B8%EB%9E%98%ED%94%84%EC%8B%9C%EA%B0%81%ED%99%94.ipynb)
+  - [pandas_자료형,카테고리자료형](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EC%9E%90%EB%A3%8C%ED%98%95_%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EC%9E%90%EB%A3%8C%ED%98%95.ipynb)
+  - [pandas_데이터통합,누락값처리](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%86%B5%ED%95%A9_%EB%88%84%EB%9D%BD%EA%B0%92%EC%B2%98%EB%A6%AC.ipynb)
+  - [pandas_열과피봇,중복데이터처리](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EC%97%B4%EA%B3%BC%ED%94%BC%EB%B4%87_%EC%A4%91%EB%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0.ipynb)
+
 
 ## SQLMapper
 - [MyBatis](https://github.com/100race/TIL/blob/main/MyBatis/MyBatis.md)
