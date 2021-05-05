@@ -23,14 +23,16 @@ iframe을 지원하지 않는 브라우저일 경우 대체내용을 보여준�
 - name : 타겟이 필요한 프레임의 이름
 html5에서 지원하지 않는 속성 : align, frameborder, scrolling, longdesc, marginheight, marginwidth
 
-## 특징
+## 특징(주로 단점)
 - [html4.0] DOCTYPE에서 Transitional, Frameset에서는 iframe 작동, Strict 문서에서는 작동 x. 
 - XSS(cross site scripting)등의 보안이슈들을 야기할 수 있음. 이를 차단하기 위해 서비스 공급자에서 http 헤더를 통해 페이지 렌더링 여부 제한 가능<br>
 서비스 공급자는 해당 사이트가 iframe에 표시되는것을 막기위해 header 설정을 통해서 페이지 도메인과 frame의 도메인이 같은지 여부를 확인, 다르면 에러 리턴
-- 
+- 사용성 문제를 일으킨다. 웹의 개념 모델과 맞지 않는 속성들때문에 브라우저가 내용을 이해하지 못할도 있음(검색엔진에 문제)
+- 웹 크롤링에 문제를 끼칠 수 있다.
+- iframe 내에서 따로 연산된 후 보여지므로 사이트의 overhead를 유발할 수 있다.
 
 ### 정리
-많이 사용되고있지는 않으며 레거시에서 발견될수있는듯 하다. XSS(cross site scripting)에 취약해 그다지 권장되지는 않음
+네이버 크롤링을 하다가 iframe 태그에서 막혀서 iframe 태그에 대해 찾아보았다. HTML5에서 많이 사용되고있지는 않으며 레거시에서 발견될수있는듯 하다. XSS(cross site scripting)에 취약해 그다지 권장되지는 않음
 
 ### 참조
 [iframe태그사용법](https://aboooks.tistory.com/205)<br>
