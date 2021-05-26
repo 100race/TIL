@@ -14,6 +14,7 @@ Today I Learned <br>
   - [SEO (검색엔진 최적화)](https://github.com/100race/TIL/blob/main/Web/SPA.md#%EB%8B%A8%EC%A0%90)
 - [EL과JSTL 표현식](https://github.com/100race/TIL/blob/main/Web/EL%EA%B3%BCJSTL.md)
 - [Redirect 와 Forward 차이](https://github.com/100race/TIL/blob/main/Web/Redirect%26Forward.md)
+- [Apache와 Tomcate](https://github.com/100race/TIL/blob/main/Web/Apache%26Tomcat.md)
 
 ## Spring
 - [SpringFramework](https://github.com/100race/TIL/blob/main/Spring/SpringFramework.md)
