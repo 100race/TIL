@@ -55,7 +55,7 @@ Today I Learned <br>
   - [pandas_자료형,카테고리자료형](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EC%9E%90%EB%A3%8C%ED%98%95_%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EC%9E%90%EB%A3%8C%ED%98%95.ipynb)
   - [pandas_데이터통합,누락값처리](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%86%B5%ED%95%A9_%EB%88%84%EB%9D%BD%EA%B0%92%EC%B2%98%EB%A6%AC.ipynb)
   - [pandas_열과피봇,중복데이터처리](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/pandas_%EC%97%B4%EA%B3%BC%ED%94%BC%EB%B4%87_%EC%A4%91%EB%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0.ipynb)
-
+  - [코인데이터DB화](https://github.com/100race/TIL/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/%EC%BD%94%EC%9D%B8%EB%8D%B0%EC%9D%B4%ED%84%B0DB%ED%99%94.ipynb)
 
 ## SQLMapper
 - [MyBatis](https://github.com/100race/TIL/blob/main/MyBatis/MyBatis.md)
