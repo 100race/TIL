@@ -36,7 +36,7 @@ Today I Learned <br>
 - [var,let,const차이점](https://github.com/100race/TIL/blob/main/JavaScript/var%2Clet%2Cconst%EC%B0%A8%EC%9D%B4%EC%A0%90.md)
 - [HTML-iframe 태그](https://github.com/100race/TIL/blob/main/Web/html_iframe.md)
 - [jQuery](https://github.com/100race/TIL/blob/main/JavaScript/jQuery.md)
-  - [CDN이란?](https://github.com/100race/TIL/blob/main/JavaScript/jQuery.md#jquery-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%A0%95)
+  - [CDN이란](https://github.com/100race/TIL/blob/main/JavaScript/jQuery.md#jquery-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%A0%95)
 ## Node.js
 - [Node.js](https://github.com/100race/TIL/blob/main/Node.js/Node.js.md)
   
