@@ -15,6 +15,7 @@ Today I Learned <br>
 - [EL과JSTL 표현식](https://github.com/100race/TIL/blob/main/Web/EL%EA%B3%BCJSTL.md)
 - [Redirect 와 Forward 차이](https://github.com/100race/TIL/blob/main/Web/Redirect%26Forward.md)
 - [Apache와 Tomcate](https://github.com/100race/TIL/blob/main/Web/Apache%26Tomcat.md)
+- [서드파티란?](https://github.com/100race/TIL/blob/main/Web/%EC%84%9C%EB%93%9C%ED%8C%8C%ED%8B%B0.md)
 
 ## Spring
 - [SpringFramework](https://github.com/100race/TIL/blob/main/Spring/SpringFramework.md)
@@ -37,6 +38,10 @@ Today I Learned <br>
 - [HTML-iframe 태그](https://github.com/100race/TIL/blob/main/Web/html_iframe.md)
 - [jQuery](https://github.com/100race/TIL/blob/main/JavaScript/jQuery.md)
   - [CDN이란](https://github.com/100race/TIL/blob/main/JavaScript/jQuery.md#jquery-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%A0%95)
+
+## DB
+- [NoSQL](https://github.com/100race/TIL/blob/main/DB/NoSQL.md)
+
 ## Node.js
 - [Node.js](https://github.com/100race/TIL/blob/main/Node.js/Node.js.md)
   
