@@ -41,7 +41,7 @@ Today I Learned <br>
 
 ## DB
 - [NoSQL](https://github.com/100race/TIL/blob/main/DB/NoSQL.md)
-
+  - [스케일업,스케일아웃](https://github.com/100race/TIL/blob/main/DB/NoSQL.md#%EC%8A%A4%EC%BC%80%EC%9D%BC-%EC%97%85scale-up%EA%B3%BC-%EC%8A%A4%EC%BC%80%EC%9D%BC-%EC%95%84%EC%9B%83scale-out)
 ## Node.js
 - [Node.js](https://github.com/100race/TIL/blob/main/Node.js/Node.js.md)
   
