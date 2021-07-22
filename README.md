@@ -39,6 +39,10 @@ Today I Learned <br>
 - [jQuery](https://github.com/100race/TIL/blob/main/JavaScript/jQuery.md)
   - [CDN이란](https://github.com/100race/TIL/blob/main/JavaScript/jQuery.md#jquery-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%84%A4%EC%A0%95)
 
+## IT Infra
+- [쿠버네티스](https://github.com/100race/TIL/blob/main/IT%EC%9D%B8%ED%94%84%EB%9D%BC/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4.md)
+- [클라우드컴퓨팅](https://github.com/100race/TIL/blob/main/IT%EC%9D%B8%ED%94%84%EB%9D%BC/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%BB%B4%ED%93%A8%ED%8C%85.md)
+
 ## DB
 - [NoSQL](https://github.com/100race/TIL/blob/main/DB/NoSQL.md)
   - [스케일업,스케일아웃](https://github.com/100race/TIL/blob/main/DB/NoSQL.md#%EC%8A%A4%EC%BC%80%EC%9D%BC-%EC%97%85scale-up%EA%B3%BC-%EC%8A%A4%EC%BC%80%EC%9D%BC-%EC%95%84%EC%9B%83scale-out)
